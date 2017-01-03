@@ -51422,7 +51422,7 @@
 	
 	  return {
 	    get: function get(time) {
-	      return $http.get('http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_' + time + '.geojson').then(function (res) {
+	      return $http.get('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_' + time + '.geojson').then(function (res) {
 	        return res.data;
 	      });
 	    },
