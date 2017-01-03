@@ -6,7 +6,10 @@ const path = require('path');
 const publicPath = path.resolve( __dirname, './public' );
 const indexHtml = path.resolve( __dirname, './index.html' );
 
+const cors = require('./cors')('*');
+
 app.use(express.static(publicPath));
+app.use(cors);
 app.get('/', (req,res) => res.sendFile(indexHtml));
 
 const http = require('http');
