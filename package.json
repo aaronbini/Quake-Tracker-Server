@@ -1,0 +1,32 @@
+{
+  "name": "map-project-server",
+  "version": "1.0.0",
+  "description": "Track earthquakes that have occurred recently around the world",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint **/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronbini/Quake-Tracker-Server.git"
+  },
+  "author": "Aaron Bini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronbini/Quake-Tracker-Server/issues"
+  },
+  "homepage": "https://github.com/aaronbini/Quake-Tracker-Server#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "moment": "^2.15.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "morgan": "^1.7.0"
+  },
+  "engines": {
+    "node": "6.3.0"
+  }
+}
